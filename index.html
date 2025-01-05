@@ -156,24 +156,13 @@
 
     <!-- Mobile Menu Script -->
     <script>
-        const menuButton = document.getElementById('menu-button');
+        document.getElementById('menu-button').addEventListener('click', () => {
         const mobileMenu = document.getElementById('mobile-menu');
-        const menuLinks = document.querySelectorAll('.menu-link');
-
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        document.getElementById('show-more').addEventListener('click', function() {
-        const hiddenReviews = document.getElementById('hidden-reviews');
-        hiddenReviews.classList.remove('hidden');
-        this.style.display = 'none';
+        if (mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.remove('hidden');
+        } else {
+            mobileMenu.classList.add('hidden');
+        }
     });
     </script>
 </body>
