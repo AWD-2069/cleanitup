@@ -1,1 +1,284 @@
-<h1>Clean it up</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hund Haus Kennel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans leading-normal tracking-normal text-gray-900">
+    <!-- Header (Title + Navigation) -->
+    <header class="bg-gray-800 p-4 fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-3xl font-bold text-white">Hund Haus Kennel</h1>
+            <!-- Navigation Menu for Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-white hover:text-gray-400">About Us</a></li>
+                    <li><a href="#hours-rates" class="text-white hover:text-gray-400">Business Hours & Rates</a></li>
+                    <li><a href="#services" class="text-white hover:text-gray-400">Services</a></li>
+                    <li><a href="#reviews" class="text-white hover:text-gray-400">Customer Reviews</a></li>
+                    <li><a href="#policies" class="text-white hover:text-gray-400">Policies & Guidelines</a></li>
+                    <li><a href="#faqs" class="text-white hover:text-gray-400">FAQs</a></li>
+                    <li><a href="#contact" class="text-white hover:text-gray-400">Contact Us</a></li>
+                    <li><a href="#photos" class="text-white hover:text-gray-400">Photos</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Button (Sticky) -->
+            <div class="md:hidden fixed top-4 right-4 z-50">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Initially Hidden) -->
+    <div id="mobile-menu" class="md:hidden hidden fixed bg-gray-800 text-white p-4 mt-16">
+        <ul class="space-y-4">
+            <li><a href="#about" class="block menu-link">About Us</a></li>
+            <li><a href="#hours-rates" class="block menu-link">Business Hours & Rates</a></li>
+            <li><a href="#services" class="block menu-link">Services</a></li>
+            <li><a href="#reviews" class="block menu-link">Customer Reviews</a></li>
+            <li><a href="#policies" class="block menu-link">Policies & Guidelines</a></li>
+            <li><a href="#faqs" class="block menu-link">FAQs</a></li>
+            <li><a href="#contact" class="block menu-link">Contact Us</a></li>
+            <li><a href="#photos" class="block menu-link">Photos</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+
+        <!-- About Us Section -->
+        <section id="about" class="py-8 px-4 bg-gray-100 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">About Us</h2>
+                <p class="text-lg">Hund Haus Kennel is a professionally designed and constructed facility specific to canine boarding needs. We offer a large, park-like setting, which provides outside play time for all clients. Our play yard is sectioned for accommodating unique dog personalities.
+                    <br><br>
+                    Our mission is to provide safe, clean, healthy, affordable and convenient canine boarding services to the Kingsport area.
+                    <br><br>
+                    If you have any questions or comments please give us a call or send us an email.
+                    <br><br>
+                    Also visit Hund Haus Kennel on Facebook.  </p>
+            </div>
+        </section>
+
+        <!-- Business Hours & Rates Section -->
+        <section id="hours-rates" class="py-8 px-4 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Business Hours and Rates</h2>
+                <ul class="list-disc pl-5 text-lg">
+                    <li><strong>Monday-Friday: </strong>6:30 AM - 5:30 PM</li>
+                    <li><strong>Saturday: </strong>8:00 AM - 12:00 PM</li>
+                    <li>Closed Sundays</li>
+                    <li class="text-red-500">Closed to the public on Friday 11:30 AM - 2:00 PM</li>
+                </ul>
+
+                <p class="text-red-500 text-lg">Animal care is 24/7. Business hours are when we are open to the public.</p>
+
+                <h3 class="text-3xl font-bold mb-4">Rates</h3>
+
+                <p class="text-lg">Our boarding rates are $15 a day for the initial dog and $10 a day for any additional dog.
+                    Our billing day is 24 hours and starst at 8 AM and runs through 8 AM the next day. 
+                    <br>
+                    <strong>Example: </strong>
+                    If you drop your pet off at 9 AM on day one and pick your pet up at 4 PM the following day you will be billed for 2 days = $30
+                </p>
+
+                <p class="text-red-500 text-lg">We only take drop-offs from the pet owner.</p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-8 px-4 bg-gray-100 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Services</h2>
+                <ul class="list-disc pl-5">
+                    <li class="text-lg">Our facility was designed and constructed specifically for professional canine boarding.</li>
+                    <li class="text-lg">We specialize in overnight boarding and doggie day-care.</li>
+                    <li class="text-lg">Every dog has their own run, bed, and bowl</li>
+                    <li class="text-lg">Our outside play area, which is an acre, is divided into 5 sections so all dogs can safely spend time running and playing outdoors.</li>
+                    <li class="text-lg">We have over 3000 square feet Of inside controlled-climate runs. </li>
+                    <li class="text-lg">Each owner must submit signed paper work accompanied by current vet records reflecting proof of vaccinations and dates.</li>
+                    <li class="text-lg text-red-500">We do not board aggressive or unpredictable dogs that pose risk to other dogs or humans.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Customer Reviews Section -->
+        <section id="reviews" class="py-8 px-4 scroll-mt-24">
+            <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
+            <div id="reviews" class="space-y-4">
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"What an amazing experience our family had at Hund Haus Kennel. Kay treated Bo like he was her own! We checked around and I have no doubt this was an answered prayer!! If you are looking for a place to care for your 'puppy' look no further! My standards are high and Kay's passes mine by a mile!! Message me if you have questions, I'd love to share. She does day care and overnight. Bo has grown just in the time he was with her! If you love your pet this is the place!!!!!!"</p>
+                    <footer class="mt-2">- Debbie Chambless Gilbert, March 13, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Lexi has now spent her second full day with Kay and other buddies. It's 'Lexi's day out at Hund Haus Kennel'. She plays and plays and socializes with other dogs and we pick up one exhausted but happy dog. Kay is phenomenal with Lexi. The facility is fantastic. I'm so thankful and will be a 'regular' here. Thank you, Kay! The facility is immaculate."</p>
+                    <footer class="mt-2">- Candace Woods Sherer, March 1, 2016</footer>
+                </blockquote>
+            </div>
+            <div id="hidden-reviews" class="hidden">
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Kay took excellent care of my dog and really worked with me on my schedule. She is a kind person who truly loves what she is doing. I have a very high-energy dog and she was wonderful with him. I am sorry a few people have not had a good experience, but I would encourage those interested to go and visit the kennel and make your own decisions."</p>
+                    <footer class="mt-2">- Margaret McCuiston Gall, January 14, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"My Sunshine just spent the weekend at Hund Haus Kennel, our first visit but definitely not our last. When I picked her up she was happy and content, not nervous or shaky as has been past experience at other facilities. The kennels were exceptionally clean...as was my Sunshine when I picked her up. Hund Haus Kennel is a 'plus' for Kingsport."</p>
+                    <footer class="mt-2">- Brenda Howard, December 13, 2015</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Hund Haus Kennel was amazing! The facility was very nice and so well kept! Kay was amazing! I'm very picky about where we board our dog and it was such a relief to find such an amazing place! I would highly recommend Hund Haus to anyone!"</p>
+                    <footer class="mt-2">- William Matthew Hensley, December 26, 2015</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Best dog kennel in town! The owner looks after the dogs as if they were her own. The outside area is huge and provides the dogs with plenty of space to run around."</p>
+                    <footer class="mt-2">- Georges Chamoun, January 18, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"So thankful that Kay was available to take care of our dogs. Very safe, clean and special care she gives. I know I will definitely use HHK again as well as recommend it to others!"</p>
+                    <footer class="mt-2">- Barbara Juhnke Clark, January 19, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Thank you so very much for taking such excellent care of my lil 'Rosie'. I would highly recommend you to anyone. I will be seeing you again in about a month. You are very gifted at what you do and I wish you many blessings in the New Year, my friend. God bless."</p>
+                    <footer class="mt-2">- Daren Smith, January 3, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"They took excellent care of Jethro during an emergency weather situation. I would recommend this kennel to anyone with a dog in need of daycare or boarding for several days!"</p>
+                    <footer class="mt-2">- Angie Goodwin, January 22, 2016</footer>
+                </blockquote>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="italic">"Wonderful kennel. Kay took outstanding care of Jethro in an unexpected emergent situation. We will definitely be sending Jethro here for all our daycare (boarding) needs."</p>
+                    <footer class="mt-2">- Natasha Goodwin, January 21, 2016</footer>
+                </blockquote>
+            </div>
+            <button id="show-more" class="mt-4 px-4 py-2 bg-blue-600 text-white font-bold rounded hover:bg-blue-700">Show More</button>
+        </section>
+
+        
+
+        <!-- Policies & Guidelines Section -->
+        <section id="policies" class="py-8 px-4 bg-gray-100 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Policies & Guidelines</h2>
+                <p class="text-lg">The following documents detail our policies and guidelines. 
+                    Feel free to download and print these documents. 
+                    The owner verification document must be completed prior to dropping off your pet for boarding.
+                </p>
+
+                <ul class="list-disc pl-5">
+                    <li class="text-lg">
+                        <a href="forms/HHK_Policies-Guidelines.pdf" target="_blank">Policies & Guidelines</a>
+                    </li>
+                    <li class="text-lg">
+                        <a href="forms/HHK_Owner_Info_Verification.pdf" target="_blank">Owner Info Verification</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs" class="py-8 px-4 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">FAQs</h2>
+                <p class="text-lg"><strong>Q:</strong> Are you a “doggie day-care”<br>
+                    <strong>A:</strong> We have day-time regulars, who sometimes play together, pending their disposition and size/age balance.
+                     HHK’s first and foremost priority is to keep all clients SAFE!
+                    Some dogs can be unpredictable and we do not socialize clients because of potential risk.
+                </p>
+                <br>
+                <p class="text-lg"><strong>Q:</strong> Do you board all breeds?<br>
+                    <strong>A:</strong> Yes, we do not breed-discriminate. However, if your dog weighs over 45lbs, HHK requires a free, trial (4-hour) stay. 
+                    If your dog is hostile and/or aggressive toward other animals and/or humans, HHK will not board the dog. 
+                    If your dog exhibits stressed, unpredicted behaviors not noted by owner, we will not board the dog. 
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="py-8 px-4 bg-gray-100 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+                <p class="text-lg">
+                    We would love to hear from you. 
+                    If you are in the area please feel free to stop by, tour our facility and speak with us in person. 
+                    You may contact us via any of the following methods or you may use the feedback form by clicking on the corresponding tab at the top.
+                </p>
+                <p class="text-lg">Address</p>
+                <blockquote class="border-l-4 border-blue-600 pl-4">
+                    <p class="text-lg">
+                        Hund Haus Kennel <br>
+                        1045 N. Wilcox Dr. <br>
+                        Kingsport TN 37664 <br>
+                    </p> 
+                </blockquote>
+                <a href="https://www.google.com/maps/dir//Hund+Haus+Kennel,+1045+N+Wilcox+Dr,+Kingsport,+TN+37664/@36.5395849,-82.5480475,17z/data=!4m13!1m4!3m3!1s0x885a8d5c9597e0bd:0x10fea0e40dedfde6!2sHund+Haus+Kennel!3b1!4m7!1m0!1m5!1m1!1s0x885a8d5c9597e0bd:0x10fea0e40dedfde6!2m2!1d-82.5445014!2d36.539631" class="text-lg" target="_blank">Driving Directions via Google</a>
+                
+                <ul class="list-disc pl-5">
+                    <li class="text-lg">
+                        Phone: <a href="tel:+14235302970" target="_blank">(423) 530-2970</a>
+                    </li>
+                    <li class="text-lg">
+                        Email: <a href="mailto:hundhauskennel@gmail.com" target="_blank">hundhauskennel@gmail.com</a>
+                    </li>
+                    <li class="text-lg">
+                        Facebook: <a href="https://www.facebook.com/HundHausKennel" target="_blank">https://www.facebook.com/HundHausKennel</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="py-8 px-4 scroll-mt-24">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4">Photos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <img src="images/cute_dog.jpg" alt="Dog at Hund Haus Kennel" class="w-full h-auto object-cover">
+                    <img src="images/outside.jpg" alt="Pet enjoying the yard" class="w-full h-auto object-cover">
+                    <img src="images/runs.jpg" alt="Runs at Hund Haus Kennel" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Armstrong Web Development</p>
+            <p>Developed with ❤️ and Tailwind CSS.</p>
+            <img src="images/logo.png" alt="Armstrong Web Development Logo" class="w-32 h-auto mx-auto">
+          </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = document.querySelectorAll('.menu-link');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        document.getElementById('show-more').addEventListener('click', function() {
+        const hiddenReviews = document.getElementById('hidden-reviews');
+        hiddenReviews.classList.remove('hidden');
+        this.style.display = 'none';
+    });
+    </script>
+</body>
+
+</html>
