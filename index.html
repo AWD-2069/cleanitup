@@ -11,11 +11,13 @@
 <body class="font-sans leading-normal tracking-normal text-gray-900">
     <!-- Header (Title + Navigation) -->
     <header class="bg-gradient-to-r from-red-800 to-red-600 p-4 fixed w-full top-0 left-0 z-50">
-        <div class="container mx-auto flex items-center justify-between">
-            <h1 class="text-2xl font-bold text-white">Clean it up</h1>
+        <div class="container mx-auto flex items-center justify-between flex-wrap">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold text-white flex-shrink-0">Clean it up</h1>
+    
             <!-- Navigation Menu for Desktop -->
-            <nav class="hidden md:block">
-                <ul class="flex space-x-6 text-lg items-center">
+            <nav class="hidden md:block flex-grow">
+                <ul class="flex flex-wrap justify-end space-x-6 text-lg items-center">
                     <li><a href="#about" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a></li>
                     <li><a href="#hours-rates" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a></li>
                     <li><a href="#services" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a></li>
@@ -23,11 +25,12 @@
                     <li><a href="#faqs" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a></li>
                     <li><a href="#contact" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a></li>
                     <li><a href="#photos" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a></li>
-                    <li>
-                        <a href="tel:+14237075222" class="px-6 py-3 bg-gradient-to-r from-teal-600 to-teal-500 rounded-xl text-white hover:from-teal-500 hover:to-teal-400 transition-all duration-300" aria-label="Book Now">Book Now</a>
-                    </li>
                 </ul>
             </nav>
+    
+            <!-- Book Now Button -->
+            <a href="tel:+14237075222" class="hidden md:inline-block px-6 py-3 bg-gradient-to-r from-teal-600 to-teal-500 rounded-xl text-white hover:from-teal-500 hover:to-teal-400 transition-all duration-300 ml-4" aria-label="Book Now">Book Now</a>
+    
             <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button id="menu-button" class="text-white focus:outline-none">
