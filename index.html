@@ -13,36 +13,45 @@
     <header class="bg-gradient-to-r from-red-800 to-red-600 p-4 fixed w-full top-0 left-0 z-50">
         <div class="container mx-auto flex items-center justify-between flex-wrap">
             <!-- Logo -->
-            <h1 class="text-2xl font-bold text-white flex-shrink-0">Clean it up</h1>
+            <h1 class="text-2xl font-bold text-white">Clean it up</h1>
     
-            <!-- Navigation Menu for Desktop -->
-            <nav class="hidden md:block flex-grow">
-                <ul class="flex flex-wrap justify-end space-x-6 text-lg items-center">
-                    <li><a href="#about" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a></li>
-                    <li><a href="#hours-rates" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a></li>
-                    <li><a href="#services" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a></li>
-                    <li><a href="#recommendations" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Recommendations">Recommendations</a></li>
-                    <li><a href="#faqs" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a></li>
-                    <li><a href="#contact" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a></li>
-                    <li><a href="#photos" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a></li>
-                </ul>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex flex-grow justify-end items-center space-x-6">
+                <a href="#about" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a>
+                <a href="#hours-rates" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
+                <a href="#services" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a>
+                <a href="#recommendations" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
+                <a href="#faqs" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a>
+                <a href="#contact" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
+                <a href="#photos" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a>
             </nav>
     
             <!-- Book Now Button -->
-            <a href="tel:+14237075222" class="hidden md:inline-block px-6 py-3 bg-gradient-to-r from-teal-600 to-teal-500 rounded-xl text-white hover:from-teal-500 hover:to-teal-400 transition-all duration-300 ml-4" aria-label="Book Now">Book Now</a>
+            <a href="tel:+14237075222" class="hidden md:inline-block px-6 py-2 bg-gradient-to-r from-teal-600 to-teal-500 rounded-lg text-white hover:from-teal-500 hover:to-teal-400 transition-all duration-300 ml-4" aria-label="Book Now">
+                Book Now
+            </a>
     
             <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-button" class="text-white focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                        class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
+            <button id="menu-button" class="md:hidden text-white ml-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
+    
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobile-menu" class="hidden bg-red-700 p-4 md:hidden">
+            <a href="#about" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a>
+            <a href="#hours-rates" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
+            <a href="#services" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a>
+            <a href="#recommendations" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
+            <a href="#faqs" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a>
+            <a href="#contact" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
+            <a href="#photos" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a>
+            <a href="tel:+14237075222" class="block mt-4 px-4 py-2 bg-teal-600 text-white rounded-lg text-center hover:bg-teal-500 transition-all duration-300" aria-label="Book Now">Book Now</a>
+        </nav>
     </header>
+
 
 
     <!-- Mobile Menu (Initially Hidden) -->
