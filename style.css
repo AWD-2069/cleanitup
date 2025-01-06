@@ -1,0 +1,24 @@
+/* Tailwind-based custom styles */
+
+/* Light Section Style */
+.section-light {
+    @apply bg-gradient-to-r from-zinc-100 to-zinc-200 text-gray-900 py-16 px-8;
+}
+
+/* Dark Section Style */
+.section-dark {
+    @apply bg-gradient-to-r from-gray-800 to-gray-900 text-white py-16 px-8;
+}
+
+/* Shared Section Styles */
+.section-title {
+    @apply text-3xl font-bold mb-4 text-center;
+}
+
+.section-text {
+    @apply text-lg leading-relaxed mb-6;
+}
+
+.section-button {
+    @apply px-6 py-2 bg-teal-600 text-white rounded-lg hover:bg-teal-500 transition-all duration-300;
+}
