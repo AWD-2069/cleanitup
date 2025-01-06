@@ -1,5 +1,10 @@
 /* Tailwind-based custom styles */
 
+/* Body Styles */
+.body-style {
+    font-sans leading-normal tracking-normal text-gray-900
+}
+
 /* Light Section Style */
 .section-light {
     @apply bg-gradient-to-r from-zinc-100 to-zinc-200 text-gray-900 py-16 px-8;
