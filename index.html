@@ -167,16 +167,23 @@ We do residential homes of any size, commercial cleaning, and Airbnb's. We also 
 
         <!-- Photos Section -->
         <section id="photos" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Photos</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                    <img src="images/business_card.jpg" alt="Business Card" class="w-full h-auto object-cover">
-                    <img src="images/car.jpg" alt="Cars" class="w-full h-auto object-cover">
-                    <img src="images/kitchen.jpg" alt="Clean kitchen" class="w-full h-auto object-cover">
-                    <img src="images/livingroom.jpg" alt="Livingroom" class="w-full h-auto object-cover">
-                    <img src="images/shower.jpg" alt="Mr. Bowers cleaning the shower" class="w-full h-auto object-cover">
-                    <img src="images/backporch.jpg" alt="Clean, decorated backporch" class="w-full h-auto object-cover">
+            <div class="relative w-full max-w-3xl overflow-hidden">
+                <!-- Carousel container -->
+                <div id="carousel" class="flex transition-transform duration-500">
+                    <!-- Images -->
+                    <img src="https://via.placeholder.com/800x400?text=Image+1" class="w-full flex-shrink-0">
+                    <img src="https://via.placeholder.com/800x400?text=Image+2" class="w-full flex-shrink-0">
+                    <img src="https://via.placeholder.com/800x400?text=Image+3" class="w-full flex-shrink-0">
+                    <img src="https://via.placeholder.com/800x400?text=Image+4" class="w-full flex-shrink-0">
                 </div>
+        
+                <!-- Navigation Buttons -->
+                <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+                    &#8592;
+                </button>
+                <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
+                    &#8594;
+                </button>
             </div>
         </section>
     </main>
