@@ -6,24 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean it up</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                red: '#FE0003',
+                light_blue: '#00A7E6',
+                dark_blue: '#02205C',
+                white: '#F5F7F6',
+                gray: '#F6F6F6',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="font-sans leading-normal tracking-normal text-gray-900">
     <!-- Header (Title + Navigation) -->
-    <header class="bg-gradient-to-l from-zinc-400 to-zinc-200 p-8 fixed w-full top-0 left-0 z-600">
+    <header class="bg-gray p-8 fixed w-full top-0 left-0 z-600">
         <div class="container mx-auto flex items-center justify-between flex-wrap">
             <!-- Logo -->
-            <h1 class="text-6xl font-bold text-red-900">Clean it up</h1>
+            <h1 class="text-6xl font-bold text-red">Clean it up</h1>
 
             <!-- Desktop Navigation -->
             <nav class="hidden lg:flex flex-grow justify-end items-center space-x-6">
-                <a href="#about" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a>
-                <a href="#hours-rates" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
-                <a href="#services" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a>
-                <a href="#recommendations" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
-                <a href="#faqs" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a>
-                <a href="#contact" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
-                <a href="#photos" class="text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a>
+                <a href="#about" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="About Us">About Us</a>
+                <a href="#hours-rates" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
+                <a href="#services" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Services">Services</a>
+                <a href="#recommendations" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
+                <a href="#faqs" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="FAQs">FAQs</a>
+                <a href="#contact" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
+                <a href="#photos" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Photos">Photos</a>
             </nav>
 
             <!-- Book Now Button -->
@@ -40,14 +55,14 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <nav id="mobile-menu" class="hidden bg-red-900 p-4 lg:hidden">
-            <a href="#about" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="About Us">About Us</a>
-            <a href="#hours-rates" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
-            <a href="#services" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Services">Services</a>
-            <a href="#recommendations" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
-            <a href="#faqs" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="FAQs">FAQs</a>
-            <a href="#contact" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
-            <a href="#photos" class="block text-white hover:text-teal-400 transition-colors duration-300" aria-label="Photos">Photos</a>
+        <nav id="mobile-menu" class="hidden bg-red p-4 lg:hidden">
+            <a href="#about" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="About Us">About Us</a>
+            <a href="#hours-rates" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Business Hours & Rates">Business Hours & Rates</a>
+            <a href="#services" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Services">Services</a>
+            <a href="#recommendations" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
+            <a href="#faqs" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="FAQs">FAQs</a>
+            <a href="#contact" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Contact Us">Contact Us</a>
+            <a href="#photos" class="block text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Photos">Photos</a>
             <a href="tel:+14237075222" class="block mt-4 px-4 py-2 bg-teal-600 text-white rounded-lg text-center hover:bg-teal-500 transition-all duration-300" aria-label="Book Now">Book Now</a>
         </nav>
     </header>
@@ -56,7 +71,7 @@
     <main class="pt-[198px]">
 
         <!-- About Us Section -->
-        <section id="about" class="py-8 px-4 bg-gradient-to-r from-red-900 to-red-800 text-white scroll-mt-[198px]">
+        <section id="about" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold mb-4">About Us</h2>
                 <p class="text-lg">Clean it up, owned by Trampas Bowers, provides professional cleaning services to homes and businesses throughout the Tri-Cities area. We are fully licensed, insured, and bonded for your peace of mind. Contact us today for a free, no-obligation estimate.</p>
@@ -81,7 +96,7 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-8 px-4 bg-gradient-to-r from-red-900 to-red-800 text-white scroll-mt-[198px]">
+        <section id="services" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold mb-4">Services</h2>
                 <ul class="list-disc pl-5 ml-4">
@@ -106,7 +121,7 @@
 
 
         <!-- FAQs Section -->
-        <section id="faqs" class="py-8 px-4 bg-gradient-to-r from-red-900 to-red-800 text-white scroll-mt-[198px]">
+        <section id="faqs" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold mb-4">FAQs</h2>
                 <p class="text-lg ml-4"><strong>Q:</strong> <br>
@@ -134,17 +149,12 @@
                             Call Assistant: (423) 707-5222
                         </a>
                     </li>
-                    <li>
-                        <a href="tel:+14239576142" class="px-6 py-2 bg-gradient-to-r from-red-600 to-red-500 rounded-lg text-white hover:from-red-500 hover:to-red-400">
-                            Call [role]: (423) 957-6142
-                        </a>
-                    </li>
                 </ul>
             </div>
         </section>
 
         <!-- Photos Section -->
-        <section id="photos" class="py-8 px-4 bg-gradient-to-r from-red-900 to-red-800 text-white scroll-mt-[198px]">
+        <section id="photos" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
             <div class="container mx-auto">
                 <h2 class="text-3xl font-bold mb-4">Photos</h2>
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
