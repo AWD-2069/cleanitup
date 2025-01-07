@@ -16,3 +16,19 @@ menuLinks.forEach(link => {
       mobileMenu.classList.add('hidden');
   });
 });
+
+// Slideshow JavaScript
+const slideshow = document.getElementById('slideshow');
+const slides = slideshow.querySelectorAll('div[data-index]');
+let currentIndex = 0;
+
+function showNextSlide() {
+    slides[currentIndex].classList.remove('opacity-100');
+    slides[currentIndex].classList.add('opacity-0');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.remove('opacity-0');
+    slides[currentIndex].classList.add('opacity-100');
+}
+
+// Set interval for the slideshow
+setInterval(showNextSlide, 3000); // Change every 5 seconds
