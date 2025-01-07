@@ -22,7 +22,27 @@
             }
           }
         }
-      </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+      <style>
+        .carousel {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 300px;
+          overflow: hidden;
+          position: relative;
+        }
+        .carousel img {
+          width: 100%;
+          transition: opacity 0.5s ease-in-out;
+          opacity: 0;
+        }
+        .carousel img.active {
+          opacity: 1;
+        }
+      </style>
 </head>
 
 <body class="font-sans leading-normal tracking-normal text-dark_blue">
@@ -167,24 +187,17 @@ We do residential homes of any size, commercial cleaning, and Airbnb's. We also 
 
         <!-- Photos Section -->
         <section id="photos" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
-            <div class="relative w-[400px] h-[800px] overflow-hidden">
-                <!-- Carousel container -->
-                <div id="carousel" class="flex transition-transform duration-500">
-                    <!-- Images -->
-                    <img src="images/backporch.jpg" class="w-full h-full object-contain flex-shrink-0">
-                    <img src="images/car.jpg" class="w-full h-full object-contain flex-shrink-0">
-                    <img src="images/kitchen.jpg" class="w-full h-full object-contain flex-shrink-0">
-                    <img src="images/livingroom.jpg" class="w-full h-full object-contain flex-shrink-0">
-                    <img src="images/shower.jpg" class="w-full h-full object-contain flex-shrink-0">
-                </div>
-        
-                <!-- Navigation Buttons -->
-                <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-                    &#8592;
-                </button>
-                <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full">
-                    &#8594;
-                </button>
+            <div x-data="carousel()" class="carousel">
+              <!-- Previous Button -->
+              <button @click="prev" class="absolute left-0 bg-gray-700 text-white px-3 py-2 rounded">Previous</button>
+            
+              <!-- Carousel Images -->
+              <template x-for="(image, index) in images" :key="index">
+                <img :src="image" :class="{'active': index === currentIndex}" alt="Carousel Image">
+              </template>
+            
+              <!-- Next Button -->
+              <button @click="next" class="absolute right-0 bg-gray-700 text-white px-3 py-2 rounded">Next</button>
             </div>
         </section>
     </main>
