@@ -17,31 +17,33 @@ menuLinks.forEach(link => {
   });
 });
 
-const carousel = document.getElementById('carousel');
-const prevButton = document.getElementById('prev');
-const nextButton = document.getElementById('next');
-
-let currentIndex = 0;
-const totalImages = carousel.children.length;
-
-function updateCarousel() {
-    const offset = -currentIndex * carousel.children[0].clientWidth;
-    carousel.style.transform = `translateX(${offset}px)`;
+function carousel() {
+  return {
+    currentIndex: 0, // Track the index of the current image
+    images: [
+      'https://via.placeholder.com/600x300?text=Slide+1',
+      'https://via.placeholder.com/600x300?text=Slide+2',
+      'https://via.placeholder.com/600x300?text=Slide+3',
+    ],
+    interval: null,
+    startAutoPlay() {
+        this.interval = setInterval(() => {
+            this.next();
+        }, 3000); // Change every 3 seconds
+    },
+    stopAutoPlay() {
+        clearInterval(this.interval);
+    },
+    // Method to go to the next image
+    next() {
+      this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    },
+    // Method to go to the previous image
+    prev() {
+      this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+    },
+    init() {
+        this.startAutoPlay();
+    }
+  };
 }
-
-function showNextImage() {
-    currentIndex = (currentIndex + 1) % totalImages;
-    updateCarousel();
-}
-
-function showPrevImage() {
-    currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-    updateCarousel();
-}
-
-// Automatic sliding every 3 seconds
-setInterval(showNextImage, 3000);
-
-// Add event listeners for buttons
-nextButton.addEventListener('click', showNextImage);
-prevButton.addEventListener('click', showPrevImage);
