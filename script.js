@@ -17,18 +17,15 @@ menuLinks.forEach(link => {
   });
 });
 
-// Slideshow JavaScript
-const slideshow = document.getElementById('slideshow');
-const slides = slideshow.querySelectorAll('div[data-index]');
-let currentIndex = 0;
-
-function showNextSlide() {
-    slides[currentIndex].classList.remove('opacity-100');
-    slides[currentIndex].classList.add('opacity-0');
-    currentIndex = (currentIndex + 1) % slides.length;
-    slides[currentIndex].classList.remove('opacity-0');
-    slides[currentIndex].classList.add('opacity-100');
-}
-
-// Set interval for the slideshow
-setInterval(showNextSlide, 3000); // Change every 5 seconds
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  let currentIndex = 0;
+  
+  const changeSlide = () => {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+  };
+  
+  setInterval(changeSlide, 3000); // Change slide every 3 seconds
+  });
