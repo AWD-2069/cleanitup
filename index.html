@@ -23,6 +23,29 @@
           }
         }
     </script>
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="font-sans leading-normal tracking-normal text-dark_blue">
@@ -167,16 +190,13 @@ We do residential homes of any size, commercial cleaning, and Airbnb's. We also 
 
         <!-- Photos Section -->
         <section id="photos" class="py-8 px-4 bg-light_blue text-white scroll-mt-[198px]">
-            <div class="container mx-auto">
-                <h2 class="text-3xl font-bold mb-4">Photos</h2>
-                <div class="relative overflow-hidden w-full h-[50vh] md:h-[75vh] lg:h-[90vh]" id="slideshow">
-                    <!-- Slideshow Images -->
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100" style="background-image: url('images/backporch.jpg'); background-size: cover; background-position: center;" data-index="0"></div>
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" style="background-image: url('images/business_card.jpg'); background-size: cover; background-position: center;" data-index="1"></div>
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" style="background-image: url('images/car.jpg'); background-size: cover; background-position: center;" data-index="2"></div>
-                    <div class="absolute inset-0 transition-opacity duration-1000 opacity-0" style="background-image: url('images/kitchen.jpg'); background-size: cover; background-position: center;" data-index="3"></div>
+                <div class="mt-20">
+                    <div class="slideshow-container mx-auto" style="width: 800px; height: 400px;">
+                        <img src="images/backporch.jpg" alt="Slide 1" class="slide active">
+                        <img src="images/kitchen.jpg" alt="Slide 2" class="slide">
+                        <img src="images/livingroom.jpg" alt="Slide 3" class="slide">
+                    </div>
                 </div>
-            </div>
         </section>
 
     </main>
