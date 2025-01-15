@@ -18,7 +18,6 @@ menuLinks.forEach(link => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('currentYear').textContent = new Date().getFullYear();
   
   const slides = document.querySelectorAll('.slide');
   let currentIndex = 0;
