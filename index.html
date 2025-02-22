@@ -32,6 +32,10 @@
         }
     </script>
     <style>
+        /* styles.css */
+        .navlink-style {
+            @apply text-dark_blue hover:text-light_blue transition-colors duration-300;
+        }
         .slideshow-container {
             position: relative;
             width: 80vw;
@@ -69,7 +73,7 @@
 
             <!-- Desktop Navigation -->
             <nav class="text-lg hidden xl:flex flex-grow justify-end items-center space-x-6">
-                <a href="#about" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="About Us">About Us</a>
+                <a href="#about" class="navlink-style" aria-label="About Us">About Us</a>
                 <a href="#hours" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Business Hours">Business Hours</a>
                 <a href="#services" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Services">Services</a>
                 <a href="#recommendations" class="text-dark_blue hover:text-light_blue transition-colors duration-300" aria-label="Recommendations">Recommendations</a>
