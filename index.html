@@ -31,11 +31,14 @@
           }
         }
     </script>
-    <style>
-        /* styles.css */
-        .navlink-style {
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .navlink-style {
             @apply text-dark_blue hover:text-light_blue transition-colors duration-300;
+            }
         }
+      </style>
+    <style>
         .slideshow-container {
             position: relative;
             width: 80vw;
